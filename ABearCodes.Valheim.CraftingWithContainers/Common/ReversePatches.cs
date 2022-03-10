@@ -56,13 +56,13 @@ namespace ABearCodes.Valheim.CraftingWithContainers.Common
             throw new NotImplementedException("stub");
         }
 
-        [HarmonyReversePatch]
-        [HarmonyPatch(typeof(Chat), "AddString",
-            typeof(string), typeof(string), typeof(Talker.Type))]
-        public static void AddString(this Chat instance, string user, string text, Talker.Type type)
-        {
-            throw new NotImplementedException("stub");
-        }
+        //[HarmonyReversePatch]
+        //[HarmonyPatch(typeof(Chat), "AddString",
+        //    typeof(string), typeof(string), typeof(Talker.Type))]
+        //public static void AddString(this Chat instance, string user, string text, Talker.Type type)
+        //{
+        //    throw new NotImplementedException("stub");
+        //}
 
         [HarmonyReversePatch]
         [HarmonyPatch(typeof(Smelter), "GetFuel")]

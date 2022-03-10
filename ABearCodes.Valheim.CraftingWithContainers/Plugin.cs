@@ -8,8 +8,8 @@ using UnityEngine;
 namespace ABearCodes.Valheim.CraftingWithContainers
 {
     [BepInPlugin("com.github.abearcodes.valheim.craftingwithcontainers",
-        "Crafting with Containers",
-        "1.0.14")]
+        "Crafting with Containers - TempFix by LukaWolf",
+        "1.0.15")]
     [BepInDependency("org.bepinex.plugins.valheim_plus", BepInDependency.DependencyFlags.SoftDependency)]
     public class Plugin : BaseUnityPlugin
     {

@@ -13,7 +13,7 @@ namespace ABearCodes.Valheim.CraftingWithContainers.Smelting
         [HarmonyPostfix]
         [HarmonyPatch(typeof(Smelter), "OnAddFuel", typeof(Switch), typeof(Humanoid), typeof(ItemDrop.ItemData))]
         private static void SmelterOnAddFuelAreaSearch(Smelter __instance, Switch sw, Humanoid user,
-            ItemDrop.ItemData item, ZNetView ___m_nview, bool __result)
+            ItemDrop.ItemData item, ZNetView ___m_nview, ref bool __result)
         {
             if (__result || !Plugin.Settings.CraftingWithContainersEnabled.Value
                          || !Plugin.Settings.AllowTakeFuelForKilnAndFurnace.Value) return;
@@ -41,7 +41,7 @@ namespace ABearCodes.Valheim.CraftingWithContainers.Smelting
         [HarmonyPrefix]
         [HarmonyPatch(typeof(Smelter), "OnAddOre", typeof(Switch), typeof(Humanoid), typeof(ItemDrop.ItemData))]
         private static bool SmelterOnAddOreAreaSearch(Smelter __instance, Switch sw, Humanoid user,
-            ItemDrop.ItemData item, ZNetView ___m_nview, ref bool __result)
+            ref ItemDrop.ItemData item, ZNetView ___m_nview, ref bool __result)
         {
             if (!Plugin.Settings.CraftingWithContainersEnabled.Value
                 || !Plugin.Settings.AllowTakeFuelForKilnAndFurnace.Value

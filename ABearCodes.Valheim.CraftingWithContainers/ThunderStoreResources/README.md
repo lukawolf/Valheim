@@ -97,6 +97,10 @@ _*for brevity, CwC stands for CraftingWithContainers further on_
 
 # Changelog
 
+### 1.0.15
+- Fix for valheim ice caves patch
+- Bump in many requirement versions
+
 ### 1.0.14
 
 - revert to old networking fix, new implementation requires all clients and server to have the mod installed 
